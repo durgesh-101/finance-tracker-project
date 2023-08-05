@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="design.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Tektur&family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="proj.js"></script>
+</head>
+<body>
+    <div class="container box-2">
+        <span>FINANCE TRACKER</span>
+        <h3>Add new transaction</h3>
+        <h4>Description:</h4>
+        <input type="text" id="description" placeholder="Enter the details">
+        <h4>Amount</h4>
+        <input type="number" id="amount" placeholder="Enter the amount">
+        <div class="buttons">
+            <button class="add-transaction" onclick="update_income()">Add-Transaction</button>
+            <button class="reset" onclick="reset()">Reset</button>
+        </div>
+        <div class="history">
+            <span>History</span>
+            <div class="content">
+                <ul class="content"></ul>
+            </div>
+        </div>
+        <input type="email" name="" id="getemail" placeholder="enter email id">
+        <button class="for-email email12" onclick="sendViaEmail()">send via mail</button>
+    </div> 
+    
+    <div class="container box-1">
+        <div class="income">
+            <p>Income</p>
+            <span>00.0</span>
+        </div>
+        <div class="expense">
+            <p>Expense</p>
+            <span>00.0</span>
+        </div>
+        <div class="profit">
+            <p>Profit/Loss</p>
+            <span>00.0</span>
+        </div>
+        <div class="saving">
+            <p>Savings</p>
+            <span>00.0</span>
+        </div>
+    </div> 
+</body>
+</html>
